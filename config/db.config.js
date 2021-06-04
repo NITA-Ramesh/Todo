@@ -1,4 +1,5 @@
 module.exports = {
+  // host.docker.internal   When Deployed to internal docker
     HOST: "localhost",
     USER: "test",
     PASSWORD: "password",
