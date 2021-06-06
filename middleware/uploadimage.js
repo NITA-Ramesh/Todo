@@ -9,14 +9,14 @@ const imageFilter = (req, file, done) => {
   }
 };
 
-var storage = multer.diskStorage({
-  destination: (req, file, done) => {
-    done(null, __basedir + "/resources/static/assets/uploads");
-  },
-  filename: (req, file, done) => {
-    done(null, `${req.userId}.png`);
-  },
-});
+// var storage = multer.diskStorage({
+//   destination: (req, file, done) => {
+//     done(null, __basedir + "/resources/static/assets/uploads");
+//   },
+//   filename: (req, file, done) => {
+//     done(null, `${req.userId}.png`);
+//   },
+// });
 
 // var uploadFile = multer({ storage: storage, fileFilter: imageFilter });
 

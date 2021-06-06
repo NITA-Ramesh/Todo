@@ -48,7 +48,7 @@ const downloadFile = (req, res) => {
 		readStream.pipe(res);
         
     }).catch(err=>{
-        console.log(error);
+        console.log(err);
         res.json({msg: 'Error', detail: err});
     })
 	

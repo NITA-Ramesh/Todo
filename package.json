@@ -1,18 +1,22 @@
 {
-  "name": "authwithjwt",
+  "name": "todoauth",
   "version": "1.0.0",
-  "description": "",
+  "description": "todo with auth",
   "main": "nodemon server.js",
   "scripts": {
-    "test": "./node_modules/jasmine/bin/jasmine.js",
+    "test": "NODE_ENV=test ./node_modules/jasmine/bin/jasmine.js",
     "test-init": "./node_modules/jasmine/bin/jasmine.js init",
     "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "config": "^3.3.6",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
@@ -26,6 +30,10 @@
     "pg-hstore": "^2.3.3",
     "request": "^2.88.2",
     "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0",
     "sequelize-mock": "^0.10.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0"
   }
 }
