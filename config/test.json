@@ -3,7 +3,7 @@
       "HOST": "localhost",
       "USER": "test",
       "PASSWORD": "password",
-      "DB": "testdb1",
+      "DB": "testdb",
       "dialect": "postgres",
       "pool": {
         "max": 5,

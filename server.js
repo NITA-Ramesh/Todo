@@ -19,10 +19,10 @@ app.use(cors(corsOptions));
 
 
 
-db.sequelize.sync({force:true,logging:false}).then(() => {
+db.sequelize.sync({logging:false}).then(() => {
   // console.log('Drop and Resync Db');
   // {force:true,logging:false}) for deleting and creating;
-  initial();
+  // initial();
 });
 
 // parse requests of content-type - application/json
@@ -50,7 +50,7 @@ const server=app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
 
-module.exports = app;
+module.exports = server;
 
 function initial() {
     Role.create({
