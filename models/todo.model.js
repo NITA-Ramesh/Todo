@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require(".");
 const User = db.user;
 module.exports = (sequelize, Sequelize) => {
     const Todo = sequelize.define("todos", {

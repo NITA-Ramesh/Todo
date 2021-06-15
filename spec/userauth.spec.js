@@ -21,7 +21,7 @@ describe("Creating Role Testing",() => {
 //         done();
 //     })
 // })
-    it("roles creation test",async() => {
+    it("roles creation test",async () => {
         console.log("@@@STARTED CREATING USERS");
     // await db.role.findAll({}).then(res=> {
     //     console.log(res);

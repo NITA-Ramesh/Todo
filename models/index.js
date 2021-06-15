@@ -2,6 +2,7 @@
 const config = require("config");
 const Sequelize = require("sequelize");
 
+
 // @ts-ignore
 const sequelize = new Sequelize(
   config.get("db.DB"),
@@ -24,10 +25,10 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.user = require("../models/user.model.js")(sequelize, Sequelize);
-db.role = require("../models/role.model.js")(sequelize, Sequelize);
-db.Image = require("../models/image.model.js")(sequelize, Sequelize);
-db.Todo= require("../models/todo.model.js")(sequelize, Sequelize);
+db.user = require("./user.model.js")(sequelize, Sequelize);
+db.role = require("./role.model.js")(sequelize, Sequelize);
+db.Image = require("./image.model.js")(sequelize, Sequelize);
+db.Todo= require("./todo.model.js")(sequelize, Sequelize);
 
 db.Todo.belongsTo(db.user,{foreignKey:"usersId"});
 
